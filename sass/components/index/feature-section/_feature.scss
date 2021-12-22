@@ -1,0 +1,36 @@
+.features-list {
+  display: flex;
+}
+
+.feature:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature__text {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $title-color;
+}
+
+.feature__description {
+  line-height: 1.71;
+
+  color: $text-color;
+}
+
+.feature__icon {
+  width: inherit;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+
+  background-color: $bg-color-addition;
+  fill: $title-color;
+}

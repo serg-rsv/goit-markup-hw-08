@@ -1,0 +1,36 @@
+.section-intro {
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: $bg-color-second;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-team.jpg);
+
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-intro__container {
+  padding: 200px 0;
+}
+
+.section-intro__title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: $color-main;
+}
+
+.btn-order {
+  @extend .btn;
+  padding: 10px 32px;
+}

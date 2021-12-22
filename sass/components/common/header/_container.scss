@@ -1,0 +1,9 @@
+.container--top {
+  padding-top: 0;
+  padding-bottom: 0;
+  @extend %flex-v-center;
+}
+
+.portfolio-header {
+  border-bottom: 1px solid $border-color;
+}

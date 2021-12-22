@@ -1,0 +1,16 @@
+.logo {
+  font-family: $font-addition;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: $accent;
+}
+
+.logo__ending {
+  color: #000000;
+
+  &--inverse {
+    color: $color-main;
+  }
+}

@@ -1,0 +1,26 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client__link {
+  display: flex;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $icons-color;
+  padding: 16px 32px;
+
+  color: $icons-color;
+  transition: border-color $time-duration $cubic-func,
+    color $time-duration $cubic-func;
+  &:hover,
+  &:focus {
+    border-color: $accent;
+    color: $accent;
+  }
+}
+
+.client__icon {
+  fill: currentColor;
+}

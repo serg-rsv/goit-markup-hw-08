@@ -1,0 +1,33 @@
+@import "./utils/variables";
+@import "./utils/placeholder";
+@import "./utils/is-hidden";
+
+@import "./base/reset";
+@import "./base/typographia";
+
+@import "./components/common/css-var";
+@import "./components/common/container";
+@import "./components/common/logo";
+@import "./components/common/btn";
+@import "./components/common/social";
+@import "./components/common/header/container";
+@import "./components/common/header/site-nav";
+@import "./components/common/header/contact";
+@import "./components/common/footer/basement";
+@import "./components/common/footer/address-box";
+@import "./components/common/footer/follow-box";
+@import "./components/common/footer/subscription-box";
+
+@import "./components/index/intro/section";
+@import "./components/index/feature-section/feature";
+@import "./components/index/what-do-we-do-section/container";
+@import "./components/index/what-do-we-do-section/work";
+@import "./components/index/team-section/team";
+@import "./components/index/client-section/client";
+
+@import "./components/portfolio/filter";
+@import "./components/portfolio/card-set";
+
+@import "./components/index/modal-window/modal-box";
+@import "./components/index/modal-window/btn";
+@import "./components/index/modal-window/forma";

@@ -1,0 +1,17 @@
+.container {
+  width: 1200px;
+  padding: 94px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  color: $title-color;
+}

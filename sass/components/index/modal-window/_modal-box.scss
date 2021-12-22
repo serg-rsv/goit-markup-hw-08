@@ -1,0 +1,27 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity $time-duration $cubic-func,
+    transform $time-duration $cubic-func;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  height: 581px;
+  background-color: $color-main;
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%);
+}

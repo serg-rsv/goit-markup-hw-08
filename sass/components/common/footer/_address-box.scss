@@ -1,0 +1,25 @@
+.address-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.address-box__logo {
+  margin-bottom: 20px;
+}
+
+.address-list {
+  line-height: 1.71;
+}
+
+.address:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link-street {
+  color: $color-main;
+}
+
+.address__link-contact {
+  color: $text-address-link;
+}
