@@ -8,9 +8,10 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
+  visibility: visible;
   transform: scale(1);
   transition: opacity $time-duration $cubic-func,
-    transform $time-duration $cubic-func;
+    transform $time-duration $cubic-func, visibility $time-duration $cubic-func;
 }
 
 .modal {
