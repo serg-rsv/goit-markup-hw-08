@@ -21,6 +21,8 @@
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -48,6 +50,7 @@ ul {
 }
 
 body {
+  min-width: 1200px;
   font-family: "Roboto", sans-serif;
   color: #757575;
   font-size: 14px;
