@@ -1,9 +1,18 @@
 .subscription-box {
-  margin-top: 12px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
+  }
 }
 
 .subscription-form {
-  @extend %flex-v-center;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $desktop) {
+    & {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 }
 
 .subscription-form__input {
@@ -11,10 +20,8 @@
   line-height: 1.2;
   color: $color-main;
 
-  margin-right: 12px;
-
   padding: 15px 16px;
-  min-width: 358px;
+  min-width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: $bg-color-second;
@@ -24,12 +31,30 @@
     line-height: 1.2;
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 12px;
+    min-width: 358px;
+  }
 }
 
 .btn-sub {
   @extend .btn;
   @extend %flex-v-center;
   padding: 10px 28px;
+
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .btn-sub__icon {

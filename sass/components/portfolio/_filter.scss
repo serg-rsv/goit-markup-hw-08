@@ -1,7 +1,22 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__item {
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter__item:not(:last-child) {

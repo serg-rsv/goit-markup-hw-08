@@ -1,6 +1,24 @@
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    & {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.client {
+  margin: 15px;
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .client__link {

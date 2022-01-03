@@ -1,9 +1,35 @@
 .features-list {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
-.feature:not(:last-child) {
-  margin-right: 30px;
+.feature {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+    max-width: calc((100% - 30px) / 2);
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 100%;
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .feature__text {

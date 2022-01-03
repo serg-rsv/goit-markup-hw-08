@@ -1,10 +1,17 @@
 .follow-box {
-  margin-top: 12px;
-  margin-right: 93px;
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 12px;
+    margin-right: 93px;
+  }
 }
 
 .slogan {
-  display: flex;
+  display: block;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;

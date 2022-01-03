@@ -1,7 +1,53 @@
 .container--top {
   padding-top: 0;
   padding-bottom: 0;
-  @extend %flex-v-center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-container {
+  z-index: 5;
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    display: none;
+  }
+
+  &.is-open {
+    display: flex;
+    @media screen and (max-width: calc(#{$tablet} - 1px)) {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 48px 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.contact-box {
+  margin-top: auto;
+  @media screen and (min-width: $tablet) {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
+body.is-open {
+  overflow-y: hidden;
 }
 
 .portfolio-header {

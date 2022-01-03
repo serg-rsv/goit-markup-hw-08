@@ -1,7 +1,11 @@
 .address-box {
-  display: flex;
-  flex-direction: column;
-  margin-right: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+  }
 }
 
 .address-box__logo {

@@ -1,17 +1,34 @@
 .container {
-  width: 1200px;
-  padding: 94px 15px;
+  padding: 60px 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: 94px 15px;
+  }
 }
 
 .container__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
 
   color: $title-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }

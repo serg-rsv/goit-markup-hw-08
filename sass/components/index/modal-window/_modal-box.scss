@@ -4,6 +4,12 @@
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 2;
+
+  padding: 15px;
+
+  @extend %flex-v-center;
+  justify-content: center;
 
   background-color: rgba(0, 0, 0, 0.2);
 
@@ -15,14 +21,11 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  overflow: auto;
+  max-width: 450px;
+  max-height: 100%;
 
-  width: 528px;
-  height: 581px;
   background-color: $color-main;
   border-radius: 4px;
-
-  transform: translate(-50%, -50%);
 }

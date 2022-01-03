@@ -1,18 +1,27 @@
-.site-nav {
-  @extend %flex-v-center;
-}
-
 .site-nav__set {
-  margin-left: 93px;
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+
+    margin-left: 88px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
   @extend %link;
+  display: flex;
 
   &:hover,
   &:focus,
@@ -20,27 +29,35 @@
     color: $accent;
   }
 
-  &--current::after,
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: $accent;
-
-    opacity: 0;
-    transform: scaleX(0);
-    transition: opacity $time-duration $cubic-func,
-      transform $time-duration $cubic-func;
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
+    padding: 0;
+    font-size: 40px;
+    line-height: 1.17;
   }
 
-  &--current::after,
-  &:hover::after {
-    opacity: 1;
-    transform: scaleX(1);
+  @media screen and (min-width: $tablet) {
+    &--current::after,
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      background-color: $accent;
+
+      opacity: 0;
+      transform: scaleX(0);
+      transition: opacity $time-duration $cubic-func,
+        transform $time-duration $cubic-func;
+    }
+
+    &--current::after,
+    &:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
   }
 }

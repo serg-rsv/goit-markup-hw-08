@@ -3,7 +3,16 @@
 }
 
 .basement__container {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
