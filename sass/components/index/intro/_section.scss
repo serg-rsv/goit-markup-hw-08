@@ -2,22 +2,87 @@
   text-align: center;
   letter-spacing: 0.06em;
   background-color: $bg-color-second;
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bg-team.jpg);
-  background-position: center;
+    url(../images/bg/hero-bg-480.jpg);
+  max-width: 480px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg/hero-bg-960.jpg);
+    }
+  }
 
-  max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  @media screen and (min-width: $tablet) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg/hero-bg-768.jpg);
+      max-width: 768px;
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/bg/hero-bg-1536.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/bg/hero-bg-1600.jpg);
+      max-width: 1600px;
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/bg/hero-bg-3200.jpg);
+      }
+    }
+  }
 }
 
 .section-intro__container {
-  padding: 200px 0;
+  padding: 118px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0;
+  }
 }
 
 .section-intro__title {
