@@ -1072,9 +1072,6 @@ body.is-open {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .card {
@@ -1175,7 +1172,7 @@ body.is-open {
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 20;
   padding: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
