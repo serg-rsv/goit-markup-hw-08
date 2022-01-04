@@ -18,6 +18,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  padding-bottom: 24px;
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
@@ -33,6 +34,7 @@
 
   @media screen and (min-width: $desktop) {
     width: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
     margin-bottom: 0;
     &:not(:last-child) {
       margin-right: 30px;
