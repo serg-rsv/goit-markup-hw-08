@@ -67,6 +67,10 @@
 .agreetment {
   text-align: center;
   margin-bottom: 30px;
+
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    font-size: 12px;
+  }
 }
 
 .agreetment__checkbox {
@@ -79,7 +83,7 @@
 .agreetment__check-label::before {
   display: inline-flex;
   content: "";
-  width: 16px;
+  width: 15px;
   height: 15px;
   border: 2px solid $title-color;
   border-radius: 2px;

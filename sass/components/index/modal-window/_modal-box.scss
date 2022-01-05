@@ -28,4 +28,11 @@
 
   background-color: $color-main;
   border-radius: 4px;
+
+  @media screen and (min-width: $desktop) {
+    & {
+      max-width: 528px;
+      width: 100%;
+    }
+  }
 }

@@ -38,6 +38,12 @@
   }
 }
 
+.card > a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .card__border {
   padding-top: 20px;
   padding-right: 24px;
@@ -47,6 +53,8 @@
   border-left: 1px solid $border-color-second;
   border-right: 1px solid $border-color-second;
   border-bottom: 1px solid $border-color-second;
+
+  flex-grow: 1;
 }
 
 .card__overlay-wrap {

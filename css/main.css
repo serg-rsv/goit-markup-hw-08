@@ -563,6 +563,7 @@ body.is-open {
 }
 
 .address-box__logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -955,7 +956,7 @@ body.is-open {
 }
 
 .member-card__position {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
 }
 
@@ -966,6 +967,7 @@ body.is-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: -15px;
 }
 
 @media screen and (max-width: calc(1200px - 1px)) {
@@ -996,15 +998,27 @@ body.is-open {
   border-width: 1px;
   border-style: solid;
   border-color: #afb1b8;
-  padding: 16px 32px;
   color: #afb1b8;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 16px 51px;
 }
 
 .client__link:hover, .client__link:focus {
   border-color: #2196f3;
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .client__link {
+    padding: 16px 59px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__link {
+    padding: 16px 32px;
+  }
 }
 
 .client__icon {
@@ -1114,6 +1128,17 @@ body.is-open {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.card > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
 .card__border {
   padding-top: 20px;
   padding-right: 24px;
@@ -1122,6 +1147,9 @@ body.is-open {
   border-left: 1px solid #ececec;
   border-right: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .card__overlay-wrap {
@@ -1196,6 +1224,13 @@ body.is-open {
   max-height: 100%;
   background-color: #fff;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    width: 100%;
+  }
 }
 
 .btn-close {
@@ -1298,6 +1333,12 @@ body.is-open {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: calc(1200px - 1px)) {
+  .agreetment {
+    font-size: 12px;
+  }
+}
+
 .agreetment__checkbox {
   position: absolute;
   --webkit-appearance: none;
@@ -1312,7 +1353,7 @@ body.is-open {
   display: -ms-inline-flexbox;
   display: inline-flex;
   content: "";
-  width: 16px;
+  width: 15px;
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
