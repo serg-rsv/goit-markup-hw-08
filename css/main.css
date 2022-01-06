@@ -689,7 +689,11 @@ body.is-open {
 }
 
 .btn-sub {
-  padding: 10px 28px;
+  padding: 10px;
+  min-width: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: calc(1200px - 1px)) {
@@ -780,7 +784,8 @@ body.is-open {
 }
 
 .btn-order {
-  padding: 10px 32px;
+  padding: 10px;
+  min-width: 200px;
 }
 
 @media screen and (min-width: 768px) {

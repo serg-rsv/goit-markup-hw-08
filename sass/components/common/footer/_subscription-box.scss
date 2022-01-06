@@ -49,7 +49,9 @@
 .btn-sub {
   @extend .btn;
   @extend %flex-v-center;
-  padding: 10px 28px;
+  padding: 10px;
+  min-width: 200px;
+  justify-content: center;
 
   @media screen and (max-width: calc(#{$desktop} - 1px)) {
     margin-right: auto;

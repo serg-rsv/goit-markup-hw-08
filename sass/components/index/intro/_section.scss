@@ -102,5 +102,6 @@
 
 .btn-order {
   @extend .btn;
-  padding: 10px 32px;
+  padding: 10px;
+  min-width: 200px;
 }
