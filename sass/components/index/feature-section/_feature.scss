@@ -40,6 +40,9 @@
   text-transform: uppercase;
 
   color: $title-color;
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+  }
 }
 
 .feature__description {

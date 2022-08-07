@@ -34,6 +34,8 @@
   @extend %link;
   padding-top: 0;
   padding-bottom: 0;
+  color: $text-color;
+
   &:hover,
   &:focus {
     color: $accent;
@@ -42,7 +44,6 @@
   @media screen and (max-width: calc(#{$tablet} - 1px)) {
     font-size: 24px;
     line-height: 1.17;
-    color: $text-color;
     &:hover,
     &:focus {
       font-size: 34px;

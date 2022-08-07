@@ -319,7 +319,7 @@ body.is-open {
     position: absolute;
     left: 0;
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     height: 4px;
     width: 100%;
@@ -391,6 +391,7 @@ body.is-open {
 .contact__link {
   padding-top: 0;
   padding-bottom: 0;
+  color: #757575;
 }
 
 .contact__link:hover, .contact__link:focus {
@@ -401,7 +402,6 @@ body.is-open {
   .contact__link {
     font-size: 24px;
     line-height: 1.17;
-    color: #757575;
   }
   .contact__link:hover, .contact__link:focus {
     font-size: 34px;
@@ -839,6 +839,12 @@ body.is-open {
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (max-width: 480px) {
+  .feature__text {
+    text-align: center;
+  }
 }
 
 .feature__description {
