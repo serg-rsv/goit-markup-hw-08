@@ -1188,7 +1188,7 @@ body.is-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card__overlay-wrap:hover > .card__overlay {
+.card > a:hover .card__overlay {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }

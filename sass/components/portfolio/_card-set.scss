@@ -73,7 +73,7 @@
   background-color: $accent;
   transition: transform $time-duration $cubic-func;
 
-  .card__overlay-wrap:hover > & {
+  .card > a:hover & {
     transform: translateY(-100%);
   }
 }
