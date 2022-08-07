@@ -40,7 +40,7 @@
   text-transform: uppercase;
 
   color: $title-color;
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: calc(#{$tablet} - 1px)) {
     text-align: center;
   }
 }

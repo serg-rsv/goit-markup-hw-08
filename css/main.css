@@ -466,6 +466,14 @@ body.is-open {
   }
 }
 
+.menu-btn:hover {
+  color: #2196f3;
+}
+
+.menu-btn .menu-btn__svg:hover {
+  fill: currentColor;
+}
+
 .menu-btn__icon-x {
   display: none;
 }
@@ -502,7 +510,7 @@ body.is-open {
 }
 
 .social-nav:not(:last-of-type):after {
-  content: "";
+  content: '';
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
@@ -841,7 +849,7 @@ body.is-open {
   color: #212121;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: calc(768px - 1px)) {
   .feature__text {
     text-align: center;
   }

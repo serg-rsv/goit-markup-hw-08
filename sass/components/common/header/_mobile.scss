@@ -17,6 +17,14 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+
+  &:hover {
+    color: $accent;
+  }
+
+  .menu-btn__svg:hover {
+    fill: currentColor;
+  }
 }
 
 .menu-btn__icon-x {
@@ -46,7 +54,7 @@
 }
 
 .social-nav:not(:last-of-type):after {
-  content: "";
+  content: '';
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
